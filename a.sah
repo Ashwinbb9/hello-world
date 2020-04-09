@@ -1,0 +1,13 @@
+var $start=new Date().getTime();
+_navigateTo("http://sahitest.com/demo/training/login.htm")
+_setValue(_textbox("user"),"test")
+_wait(2000)
+_highlight(_password("password"))
+_setValue(_password("password"),"secret")
+//_wait(3000,_isVisible(_textbox("q")))
+	_log(":dsjsdjfbsdjvdsvdsjvbjhdsv");
+_click(_submit("Login"))
+_log("s")
+var $end=new Date().getTime();
+var $time=$end-$start;
+_log($time)
